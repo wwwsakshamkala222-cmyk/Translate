@@ -62,7 +62,7 @@ const Translator = () => {
       ];
       
       if (!allowedTypes.includes(file.type)) {
-        alert("Please upload a valid document (PDF, DOCX, TXT, or HTML)");
+        alert("Please upload a valid document ( DOCX )");
         return;
       }
       
@@ -440,7 +440,7 @@ const Translator = () => {
                     </div>
                     <div className="upload-text">
                       <span className="upload-title">Click to upload or drag and drop</span>
-                      <span className="upload-subtitle">DOCX, TXT, HTML (Max 20MB)</span>
+                      <span className="upload-subtitle">DOCX (Max 20MB)</span>
                     </div>
                   </div>
                 </label>
@@ -594,7 +594,7 @@ const Translator = () => {
               <div className="info-content">
                 <span className="info-title">How Document Translation Works</span>
                 <ul className="info-list">
-                  <li>Upload your document (DOCX, TXT, or HTML)</li>
+                  <li>Upload your document (DOCX)</li>
                   <li>Select your target language</li>
                   <li>Document is uploaded to AWS S3</li>
                   <li>Translation job runs in AWS Translate</li>
